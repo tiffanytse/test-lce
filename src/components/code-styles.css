@@ -1,0 +1,164 @@
+/**
+ * Darcula theme
+ *
+ * Adapted from a theme based on:
+ * IntelliJ Darcula Theme (https://github.com/bulenkov/Darcula)
+ *
+ * @author Alexandre Paradis <service.paradis@gmail.com>
+ * @version 1.0
+ */
+
+pre[class*="language-"] {
+  overflow-x: scroll;
+  border-radius: 4px;
+  white-space: pre;
+  margin: 0;
+  background-color: #000639;
+  position: relative;
+  padding-top: 44px;
+  box-shadow: inset 0px 43px 0px 0px rgba(0,6,57,1), inset 0px 44px 0px 0px rgba(28,39,94,1);
+}
+
+pre > code[class*="language-"]{
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  letter-spacing: -1px;
+  margin-top: 0;
+  padding: 15px;
+  color: #dfe3e8;
+  background-color: transparent;
+  display: block;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+pre > code[class*="language-"]::-moz-selection, pre > code[class*="language-"] ::-moz-selection {
+  background: #7E97CC;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+pre > code[class*="language-"]::selection, pre > code[class*="language-"] ::selection {
+  background: #7E97CC;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+	color: #919eab;
+}
+
+.token.delimiter,
+.token.boolean,
+.token.selector,
+.token.important,
+.token.atrule {
+	color: #fdac9a;
+}
+
+.token.tag .token.rd,
+.token.tag .token.rd .token.punctuation,
+.token.tag .token.rd .token.attr-name,
+.token.tag .token.rd .token.attr-value,
+.token.tag .token.rd .token.attr-value .token.punctuation,
+.token.tag .token.ld,
+.token.tag .token.ld .token.punctuation,
+.token.tag .token.ld .token.attr-name,
+.token.tag .token.ld .token.attr-value,
+.token.tag .token.ld .token.attr-value .token.punctuation,
+.token.operator,
+.token.punctuation,
+.token.attr-name {
+  color: #32cac7;
+}
+
+.token.tag,
+.token.tag .token.punctuation,
+.token.tag .token.attr-name,
+.token.tag .token.attr-value,
+.token.tag .token.attr-value .token.punctuation {
+  color: #dfe3e8;
+}
+
+
+.token.doctype,
+.token.keyword,
+.token.builtin {
+  color: #edc200;
+}
+
+.token.entity,
+.token.number,
+.token.symbol {
+  color: #edc200;
+}
+
+.token.property,
+.token.constant,
+.token.variable {
+  color: #fdac9a;
+}
+
+.token.string,
+.token.char {
+	color: #edc200;
+}
+
+.token.attr-value,
+.token.attr-value .punctuation {
+  color: #edc200;
+}
+.token.attr-value .punctuation:first-child {
+  color: #edc200;
+}
+
+.token.url {
+  color: #32cac7;
+  text-decoration: underline;
+}
+
+.token.function{
+	color: #edc200;
+}
+
+.token.regex {
+  background: #32cac7;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.inserted {
+  background: #294436;
+}
+
+.token.deleted {
+  background: #484a4a;
+}
+
+/*code.language-css .token.punctuation {
+	color: #cc7832;
+}*/
+
+code.language-css .token.property,
+code.language-css .token.property + .token.punctuation {
+	color: #a9b7c6;
+}
+
+code.language-css .token.id {
+	color: #ffc66d;
+}
+
+code.language-css .token.selector > .token.class,
+code.language-css .token.selector > .token.attribute,
+code.language-css .token.selector > .token.pseudo-class,
+code.language-css .token.selector > .token.pseudo-element {
+	color: #ffc66d;
+}

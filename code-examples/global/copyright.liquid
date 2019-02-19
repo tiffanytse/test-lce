@@ -1,0 +1,10 @@
+{% comment %}
+  title: Copyright text
+  description: Copyright text is typically displayed in the footer section of an online store. The text includes the copyright symbol, the current year, your store name, and a "Powered by Shopify" link.
+  tags: #copyright, #footer
+  last_updated: 2018-11-06
+  step_1: Add the following code to the `footer.liquid` section file.
+{% endcomment %}
+
+<p>&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: '/' }}</p>
+<p>{{ powered_by_link }}</p>

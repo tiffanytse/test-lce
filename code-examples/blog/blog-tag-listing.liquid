@@ -1,0 +1,35 @@
+{% comment %}
+   title: Blog tag listing
+   description: Often customers may navigate through different blog articles using blog tags. This component displays all the tags associated with a store. This includes tags of articles that are not in the current pagination view. Tags can be enabled or disabled from the [Theme Editor.](https://help.shopify.com/en/themes/development/theme-editor) This component might be styled as a "tag cloud" or displayed in a "sidebar".
+   tags: #tags, #sidebar, #blog
+   last_updated: 2018-11-28
+   step_1: Locate the section file which contains your theme's blog article listing, eg: `blog-template.liquid` and paste the code below into this file.
+   step_2: The section settings in this example can be placed inside the sections's existing schema array, if it is already present, eg: within section settings named `Blog pages`. In that case, the code within `{% schema %}` tags below can be added within the existing schema settings (including a comma to separate from other settings).
+   step_3: By default, tags for all blogs will appear. This can be disabled on the Theme Editor.
+ {% endcomment %}
+
+<aside>
+  {%- if section.settings.blog_show_tags -%}
+    <ul>
+      <li>
+        {%- for tag in blog.all_tags -%}
+          <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+        {%- endfor -%}
+      </li>
+    </ul>
+  {%- endif -%}
+</aside>
+
+{% schema %}
+{
+  "name": "Blog posts",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "blog_show_tags",
+      "label": "Show tags",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

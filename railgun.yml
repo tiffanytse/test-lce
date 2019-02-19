@@ -1,0 +1,19 @@
+# https://development.shopify.io/tools/dev/railgun/Railgun-Config
+name: liquid-code-examples
+
+vm:
+  image:      /opt/dev/misc/railgun-images/default
+  ip_address: 192.168.64.236
+  memory:     2G
+  cores:      2
+
+volumes:
+  root:  '2G'
+
+services:
+  - redis
+  - nginx
+
+hostnames:
+  - liquid-code-examples.myshopify.io: { proxy_to_host_port: 56559 }
+

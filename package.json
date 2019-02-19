@@ -1,0 +1,57 @@
+{
+  "name": "liquid-library",
+  "description": "Shopify's Templating Language",
+  "version": "1.0.0",
+  "author": "Shopify Developers <developers@shopify.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.4",
+    "@emotion/styled": "^10.0.4",
+    "@shopify/marketing-assets": "^69.0.2",
+    "@types/react-helmet": "^5.0.8",
+    "clipboard": "^2.0.4",
+    "emotion": "^10.0.4",
+    "emotion-server": "^10.0.4",
+    "gatsby": "^2.0.53",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-emotion": "^3.0.1",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.0.7",
+    "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-plugin-svg-sprite": "^2.0.1",
+    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prismjs": "^1.15.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-markdown": "^4.0.4"
+  },
+  "keywords": [
+    "Gatsby",
+    "Liquid",
+    "Shopify",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "s": "gatsby develop",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write",
+    "format:all": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
