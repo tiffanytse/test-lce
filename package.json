@@ -52,6 +52,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Shopify/liquid-code-examples"
+  },
+  {
+    "scripts": {
+      "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    }
   }
 }

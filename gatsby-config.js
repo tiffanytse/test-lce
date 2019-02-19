@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/liquid-code-examples",
   siteMetadata: {
     title: 'Shopify Liquid code examples',
     slogan: 'Build and customize themes faster with component based Liquid examples'
